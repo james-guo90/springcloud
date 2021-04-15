@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
     @GetMapping("/hello")
     public String hello() {
+        int i = 10 / 0;
         return "8081Feign的服务提供者";
     }
 }
